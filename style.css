@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+#box{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    margin: 20px;
+}
+
+#container{
+    border: 1px solid red;
+    width: 800px;
+    height: 700px;    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#title{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#main{
+    width: 400px;
+    height: 400px;
+    display: grid;
+}
+    #info-os{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    #type-instalation{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    #info-cliente{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }#box-city{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    #text-area{
+        display: flex;
+        flex-direction: column;
+    }
+    #box-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    #saida-output{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+

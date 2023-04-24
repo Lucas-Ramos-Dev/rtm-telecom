@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTM-Telecom</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    
+</head>
+    <body>
+        <div id="box">
+            <div id="container">
+                <div id="title">
+                    <h1>Gerador de OSs finalizadas</h1>
+                    <p>EX: OS: 235689, Instalação Aérea, José da Silva, Tijucas-SC</p>  
+                </div>
+
+                <div id="main">
+                    <div id="info-os" class="box-interno">
+                        <span>Informe a OS:</span>
+                        <input id="input-os" type="text" size="7">
+                    </div>
+                    
+                    <div class="box-interno" id="type-instalation">
+                        <span>Tipo de Instalação:</span>
+                        <select id="instalation">
+                            <option value="vazio"></option>
+                            <option value="insta-aerea">Instalação Aérea</option>
+                            <option value="insta-sub">Instalação Subterrânea</option>
+                            <option value="insta-predio">Instalação de Prédio</option>
+                            <option value="suporte">Suporte</option>
+                            <option value="homologacao">Homologação</option>
+                            <option value="cabeamento-fibra">Cabeamento fibra</option>
+                            <option value="venda-produto">Venda de produto</option>
+                            <option value="venda-visita">venda com visita</option>
+                        </select>
+                    </div>
+                    
+                    <div id="info-cliente" class="box-interno">
+                        <span>Cliente: </span>
+                        <input id="input-client" type="text" size="10">
+                    </div>
+                    
+                    <div id="box-city" class="box-interno">
+                        <span>Cidade: </span>
+                        <select name="city" id="city">
+                            <option value="vazio"></option>
+                            <option value="bombinhas">Bombinhas-SC</option>
+                            <option value="brusque">Brusque-SC</option>
+                            <option value="itapema">Itapema-SC</option>
+                            <option value="porto-belo">Porto Belo-SC</option>
+                            <option value="tijucas">Tijucas-SC</option>
+                        </select>
+                    </div>
+
+                    <div id="text-area" class="box-interno">
+                        <textarea id="output-textarea" cols="42" rows="2"></textarea>
+                    </div>
+                        
+                    <div id="box-btn">
+                        <button class="btn" id="btn-gerar">Gerar</button>
+                        <button class="btn" id="btn-copiar">Copiar</button>
+                        <button class="btn" id="btn-limpar">Limpar</button>
+                
+                        <button class="btn" id="btn-whatsapp" onclick="window.location.href = 'https://chat.whatsapp.com/FkztAur6cwpDiOdz60LSin' ">Whatsapp</button>
+                        <button class="btn" id="btn-upperCase">MAIÚSCULAS</button>
+                        <button class="btn" id="btn-lowerCase">minúsculas</button>
+                    </div>
+
+                    <div id="saida-output">
+                        <p id="output-p"></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
